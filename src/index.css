@@ -3,6 +3,8 @@ body {
  font-family: system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+ 
 }
 
 code {
@@ -15,7 +17,42 @@ p{
 a{
   text-decoration: none;
   color: #fff;
+  
 }
 button{
   z-index: 20;
+}
+label{
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  margin-left: 5px;
+}
+input,textarea{
+  padding:15px;
+  border-radius: 10px;
+  border: 1px solid rgb(135, 110, 200);
+  background: hsla(250, 32%, 18%, 1);
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  font-size: 15px;
+  margin: 5px;
+ 
+
+}
+input::placeholder{
+  color: rgb(130, 128, 128);
+  font-weight: 700;
+}
+:placeholder-shown{
+  color: rgb(130, 128, 128);
+  font-weight: 500;
+}
+@media screen and (max-width:800px) {
+  input{
+    width: 100%;
+  }
 }

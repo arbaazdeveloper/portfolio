@@ -4,7 +4,7 @@ const Maintext = () => {
   const [state,setState]=useState('hidden')
   const [state2,setState2]=useState('unView')
   const ref=useRef()
-  const ref2=useRef()
+
   const func=()=>{
     const observer=new IntersectionObserver((el)=>{
       el.forEach((item)=>{
@@ -50,7 +50,9 @@ const Maintext = () => {
   return (
     <>
      <div className='banner'>
+     
         <div  className='banner-text'>
+          <a href='#contact'>Contact</a>
             <div className={`hero-text ${state}`} ref={ref} style={{padding:'20px',marginLeft:'30px'}}>
         Hi,There I am Arbaaz Ahmad  A Web Developer
             </div>
@@ -67,9 +69,7 @@ const Maintext = () => {
             </div>
         </div>
            
-        <div className='fade'>
-            
-        </div>
+        <div className='fade'></div>
      
         </div>
     </>

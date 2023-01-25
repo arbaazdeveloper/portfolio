@@ -1,4 +1,5 @@
 import React from 'react'
+import Contact from '../components/Contact'
 import Container1 from '../components/Container1'
 import Desings from '../components/Desings'
 import Education from '../components/Education'
@@ -15,6 +16,7 @@ const Home = () => {
        </div>
        <Project/>
        <Education/>
+       <Contact/>
     </div>
   )
 }
