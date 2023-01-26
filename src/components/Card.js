@@ -1,6 +1,6 @@
 import React, { useEffect, useRef,useState } from 'react'
 
-import { ArrowRight ,Star} from 'react-bootstrap-icons';
+import { ArrowRight} from 'react-bootstrap-icons';
 const Card = ({type,text,heading,icon,iconType}) => {
   const ref=useRef()
   const [state,setState]=useState('bottom')
