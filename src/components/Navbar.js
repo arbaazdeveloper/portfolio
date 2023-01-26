@@ -41,14 +41,14 @@ const Navbar = () => {
     <div style={{zIndex:'1000', position:'fixed',top:'0',width:'100%',marginBottom:'100px'}}>
         <div style={{zIndex:'2', width:'100%', transition:'0.5s', paddingTop:state.padding, background:state.background,position:'sticky',top:0}} className='nav-bar'>
             <div style={{zIndex:'2',paddingLeft:'10px'}} className={`brand ${isShow.show?'toggle-extra':''}`}>
-                <h1>Abby</h1>
+                <h1>Abby Developer</h1>
             </div>
 
             <div style={{zIndex:'2'}} className={`nav-links ${isShow.show?'':'toggle-links'}`}>
-                <a href='#'>Works</a>
-                <a href='#'>Projects</a>
-                <a href='#'>Desings</a>
-                <a className='full-round-btn'style={{width:'100px'}} href='#contact'>Contact</a>
+                <a onClick={toggle} href='#'>Works</a>
+                <a onClick={toggle} href='#project'>Projects</a>
+                <a onClick={toggle} href='#designs'>Desings</a>
+                <a onClick={toggle} className='full-round-btn'style={{width:'100px'}} href='#contact'>Contact</a>
                 
             </div>
             <div className={`toggle-btn ${isShow.show?'toggle-extra':''}`} onClick={toggle}>

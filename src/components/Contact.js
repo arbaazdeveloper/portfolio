@@ -29,7 +29,7 @@ const Contact = () => {
             <label>
                 Message
 
-            <textarea  style={{width:'98%',height:'200px'}}></textarea>
+            <textarea rows="4" cols="50"  style={{height:'200px'}}></textarea>
             </label>
             <button style={{margin:'0px !important'}} className='full-round-btn'>Send <ArrowRight/></button>
 
@@ -62,15 +62,11 @@ const Contact = () => {
    <p>Town Hall Gahzipur (U.P) India</p></div>
             </div>
                 <div className='social-links'>
-<div className={`card-icon icondark`}>
- <a href='#'>  <Linkedin/></a>
-   </div>
-   <div className={`card-icon icondark`}>
- <a href='#'>  <Instagram/></a>
-   </div>
-   <div className={`card-icon icondark`}>
- <a href='#'>  <Facebook/></a>
-   </div>
+
+   <a href='#'><div className={`card-icon icondark`}><Linkedin/></div></a>
+   <a href='#'><div className={`card-icon icondark`}><Instagram/></div></a>
+ <a href='#'><div className={`card-icon icondark`}><Facebook/></div></a>
+   
                 </div>
                 </div>
         </div>

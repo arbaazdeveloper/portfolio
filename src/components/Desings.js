@@ -4,7 +4,7 @@ import design2 from '../assets/design2.png'
 import design3 from '../assets/design3.png'
 const Desings = () => {
   return (
-    <div className='desing'>
+    <div className='desing' id='designs'>
         <h1 className='heading-text'>Explore Some Designs</h1>
         <p style={{textAlign:'center'}}>Explore some fantastic design made by me </p>
         <div className='poly-line'></div>
