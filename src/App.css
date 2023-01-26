@@ -403,6 +403,7 @@ border: none;
   justify-content: space-around;
   width: 50%;
   align-items: center;
+  transition: 0.5s;
 }
 .toggle-btn{
   display: none;
@@ -410,6 +411,7 @@ border: none;
 @media screen and (max-width:800px) {
   .toggle-links{
     display: none;
+   
   }
   .nav-links{
     flex-direction: column;
@@ -418,7 +420,12 @@ border: none;
     align-items: center;
     background-color: #1b1822;
     width: 100%;
-    transition: 0.5s;
+    transition: right linear .2s;
+  }
+  .nav-links a:nth-child(1){
+    transition: right linear .2s;
+    transition-delay: 1s ;
+
   }
   .nav-links a{
     margin-bottom: 10px;
@@ -426,10 +433,34 @@ border: none;
   
   .toggle-btn{
     display: block;
+    padding: 20px;
     
   }
   .toggle-extra{
     background-color: #1b1822;
+  }
+  .bar{
+    height: 2px;
+    width: 30px;
+    margin: 7px;
+    background: #fff;
+    transition: 0.5s;
+  }
+  .bar:nth-child(2){
+    width: 20px;
+   
+  }
+
+  .open:nth-child(1){
+    transform: rotateZ(50deg);
+     position: relative;
+     top: 9px;
+  }
+  .open:nth-child(2){
+    display: none;
+  }
+  .open:nth-child(3){
+    transform: rotateZ(-50deg);
   }
   
 }

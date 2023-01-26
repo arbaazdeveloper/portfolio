@@ -52,7 +52,10 @@ const Navbar = () => {
                 
             </div>
             <div className={`toggle-btn ${isShow.show?'toggle-extra':''}`} onClick={toggle}>
-       <BarChart/>
+     
+       <div className={`bar ${isShow.show?'open':''}`}></div>
+       <div className={`bar ${isShow.show?'open':''}`}></div>
+       <div className={`bar ${isShow.show?'open':''}`}></div>
             </div>
         </div>
 
