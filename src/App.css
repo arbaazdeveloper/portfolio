@@ -345,6 +345,7 @@ border: none;
   padding-top: 10px;
   border-top: 1px solid hsla(257, 56%, 61%, 1);
   color: #fff;
+  width: 350px;
 }
 .view{
   transform: translate(0px);

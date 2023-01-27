@@ -78,7 +78,7 @@ const isMobile = width <= 768;
             </div>
 
             <div style={{zIndex:'2'}} className={`main-hero-text ${state2}`}>
-            <p>The background-clip property ensures that the background doesn’t extend beyond an element — in this case, the text. The color prop is set to transparent so that you can see the background directly behind the header.</p>
+            <p>I'm Arbaaz Ahmad, a web application developer who works on a range of diverse projects. I have worked on a variety of projects up to this point, and I enjoy using technology and working on technology.</p>
             </div>
             <div style={{zIndex:'2'}} className={`main-hero-text ${state2}`} >
 

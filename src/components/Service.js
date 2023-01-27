@@ -30,7 +30,7 @@ const Service = ({heading,link,text,image}) => {
         <div className='project-info'>
             <h3>{heading}</h3>
             <p>{text}</p>
-            <div style={{marginTop:'120px'}}>
+            <div style={{marginTop:'50px'}}>
             <a href={link}> <Github/> View on github</a>
             </div>
         </div>
