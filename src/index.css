@@ -58,3 +58,28 @@ input::placeholder{
     width: 100%;
   }
 }
+::-moz-selection { /* Code for Firefox */
+  color: rgb(255, 255, 255);
+  background: hsla(250, 32%, 18%, 1);
+}
+
+::selection {
+  color: rgb(255, 255, 255);
+  background: hsla(250, 32%, 18%, 1);
+}
+::-webkit-scrollbar{
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+
+}
+::-webkit-scrollbar-button{
+  background-color: hsla(250, 32%, 18%, 1);
+}
+::-webkit-scrollbar-track{
+  background: #1b1822;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(74, 72, 72);
+  border-radius: 10px;
+
+}

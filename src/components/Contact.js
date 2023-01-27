@@ -1,6 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ArrowRight,Mailbox,Linkedin ,Phone,GeoAlt,Instagram,Facebook} from 'react-bootstrap-icons';
 const Contact = () => {
+  const [body,setBody]=useState({name:'',email:'',contact:'',message:''})
+  const onchangeHandle=(e)=>{
+    setBody({...body,[e.target.name]:e.target.value})
+  }
+  const send=()=>{
+    if(body.name==='' || body.email==='',body.contact==="",body.message===""){
+      alert('all fields are required')
+      return
+    }
+    if(isNaN(Number(body.contact))){
+      alert('Contact should be number only')
+      return
+    }
+    
+    const url='http://localhost:5000/sendmail'
+    fetch(url,{
+      method:'POST',
+      headers:{'Content-type':'application/json'},
+      body:JSON.stringify(body)
+    }).then((resposnse)=>resposnse.json()).then((data)=>{
+      if(data.message==='sent succesfully'){
+        alert('Contact submitted succesfully')
+      }
+      else{
+        alert('Some Error occured Please Try Again later or send your query on my email')
+      }
+    })
+  }
   return (
     <div id='contact'>
         <div className='contact'>
@@ -10,28 +38,28 @@ const Contact = () => {
             <div style={{width:'300px'}}>
             <label htmlFor='name'>
                 Full Name
-               <input id='name' name='name' placeholder='Name'></input>
+               <input required="required" id='name'value={body.name} name='name' placeholder='Name'onChange={onchangeHandle}></input>
             </label>
             </div>
             <div style={{width:'300px'}}>
             <label htmlFor='Email'>
               Email
-               <input id='name' name='name' placeholder='Name'></input>
+               <input id='name'value={body.email} type="email" name='email' placeholder='Name'onChange={onchangeHandle}></input>
             </label>
             </div>
             <div style={{width:'300px'}}>
             <label htmlFor='name'>
                 Phone Number
-               <input id='name' name='name' placeholder='Contact No.'></input>
+               <input id='name' value={body.contact} name='contact' placeholder='Contact No.'onChange={onchangeHandle}></input>
             </label>
             </div>
             </div>
             <label>
                 Message
 
-            <textarea rows="4" cols="50"  style={{height:'200px'}}></textarea>
+            <textarea name='message' value={body.message} rows="4" cols="50" onChange={onchangeHandle} style={{height:'200px'}}></textarea>
             </label>
-            <button style={{margin:'0px !important'}} className='full-round-btn'>Send <ArrowRight/></button>
+            <button onClick={send} style={{margin:'0px !important'}} className='full-round-btn'>Send <ArrowRight/></button>
 
             <div className='reach-me'>
                 <h1>Get in Touch !</h1>
