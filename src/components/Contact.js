@@ -91,9 +91,9 @@ const Contact = () => {
             </div>
                 <div className='social-links'>
 
-   <a href='#'><div className={`card-icon icondark`}><Linkedin/></div></a>
-   <a href='#'><div className={`card-icon icondark`}><Instagram/></div></a>
- <a href='#'><div className={`card-icon icondark`}><Facebook/></div></a>
+   <a target={'__'} href='https://www.linkedin.com/in/arbaaz-ahmad-8176411ab'><div className={`card-icon icondark`}><Linkedin/></div></a>
+   <a target={'__'} href='https://www.instagram.com/arbaazuniquegzp?igshid=ZmZhODViOGI'><div className={`card-icon icondark`}><Instagram/></div></a>
+ <a href=''><div className={`card-icon icondark`}><Facebook/></div></a>
    
                 </div>
                 </div>

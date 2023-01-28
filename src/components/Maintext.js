@@ -82,7 +82,7 @@ const isMobile = width <= 768;
             </div>
             <div style={{zIndex:'2'}} className={`main-hero-text ${state2}`} >
 
-            <button style={{textAlign:'center',zIndex:'2'}} className='full-round-btn'>Hire Me  <ArrowRight/></button>
+            <a href='#contact' style={{textAlign:'center',zIndex:'2'}} className='full-round-btn'>Hire Me  <ArrowRight/></a>
             </div>
         </div>
            

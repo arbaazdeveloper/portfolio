@@ -45,7 +45,7 @@ const Navbar = () => {
             </div>
 
             <div style={{zIndex:'2'}} className={`nav-links ${isShow.show?'':'toggle-links'}`}>
-                <a onClick={toggle} href='#'>Works</a>
+                <a onClick={toggle} href='#project'>Works</a>
                 <a onClick={toggle} href='#project'>Projects</a>
                 <a onClick={toggle} href='#designs'>Desings</a>
                 <a onClick={toggle} className='full-round-btn'style={{width:'100px'}} href='#contact'>Contact</a>
