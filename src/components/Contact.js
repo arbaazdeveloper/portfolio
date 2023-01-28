@@ -15,7 +15,7 @@ const Contact = () => {
       return
     }
     
-    const url='http://localhost:5000/sendmail'
+    const url='https://portfolio-backend-kr87.onrender.com/sendmail'
     fetch(url,{
       method:'POST',
       headers:{'Content-type':'application/json'},
